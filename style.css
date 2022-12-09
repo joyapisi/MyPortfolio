@@ -143,10 +143,6 @@ li {
   list-style: none;
 }
 
-/* .background-images {
-  position: fixed;
-} */
-
 .rectangle4 {
   position: absolute;
   width: 95.58px;
@@ -297,7 +293,7 @@ a:active {
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 552px;
+  height: 550px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -382,24 +378,43 @@ a:active {
   justify-content: space-around;
   align-items: flex-start;
   padding: 0;
-  gap: 2px;
+  gap: 8px;
   width: 203px;
   height: 24px;
-  margin-left: 10%;
+  margin-left: 1.7%;
+  top: 1080px;
 }
 
 .button {
+  height: 24px;
   background-color: hsl(240, 100%, 96%);
   border: none;
   color: #6070ff;
-  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
+  padding: 4px 12px;
+  align-items: center;
+  margin: 4px 0;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 8px;
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.button .htmlbutton {
+  width: 53px;
+}
+
+.button .cssbutton {
+  width: 45px;
+}
+
+.button .jsbutton {
+  width: 89px;
 }
 
 .button a:hover {
@@ -424,9 +439,13 @@ a:active {
   flex: none;
   order: 3;
   flex-grow: 0;
+  top: 215px;
 }
 
 .action .normalbutton {
+  width: 124px;
+  height: 48px;
+  color: #396DF2;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -434,12 +453,9 @@ a:active {
   padding: 12px;
   gap: 10px;
   position: absolute;
-  width: 124px;
-  height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  margin-top: 10%;
-  margin-left: -11px;
+  margin-top: 3.5%;
 }
 
 .action .normalbutton a:hover {
@@ -460,6 +476,7 @@ a:active {
 
 .seeproject {
   height: 24px;
+  width: 100px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -468,11 +485,8 @@ a:active {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* Page3 */
@@ -485,6 +499,7 @@ a:active {
   padding: 16px;
   gap: 12px;
   width: 327px;
+  height: 580px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;

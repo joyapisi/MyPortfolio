@@ -162,7 +162,7 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Joy Phoebe**
 
 - GitHub: (https://github.com/joyapisi)
 - Twitter: (https://twitter.com/joyapisi)
