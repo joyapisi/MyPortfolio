@@ -445,7 +445,7 @@ a:active {
 .action .normalbutton {
   width: 124px;
   height: 48px;
-  color: #396DF2;
+  color: #396df2;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -491,7 +491,6 @@ a:active {
 
 /* Page3 */
 .card2 {
-  height: 596px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
