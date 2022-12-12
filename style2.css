@@ -1,4 +1,11 @@
 .list {
-display: float;
 float: left;
+color: #6070ff;
+background-color: hsl(240, 100%, 96%);
+border-radius: 5px;
+list-style: none;
+padding: 5px 10px;
+gap: 1em;
+margin: 0.2em;
+font-family: 'Poppins', sans-serif;
 }
