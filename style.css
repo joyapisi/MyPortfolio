@@ -49,7 +49,7 @@ nav ul li a {
 .nav-button2 {
   display: flex;
   flex-direction: col;
-align-items: flex-start;
+  align-items: flex-start;
   right: 24px;
   border: none;
   padding: 8px 8% 0 0;
@@ -612,7 +612,7 @@ margin-top: 27%;
 /* top: 1075px; */
 }
 
-.action .normalbutton2 {
+.normalbutton3 {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
