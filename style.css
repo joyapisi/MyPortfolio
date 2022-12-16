@@ -1,6 +1,6 @@
- html * {
-    max-height: 1000000px;
-  }
+html * {
+  max-height: 1000000px;
+}
 
 nav {
   background-color: #fff;
@@ -10,9 +10,9 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
-  
+
 nav ul li a {
-   display: none;
+  display: none;
 }
 
 .nav-button1 {
@@ -34,7 +34,7 @@ nav ul li a {
   line-height: 20px;
   align-items: center;
   text-align: center;
-  color: #6070FF;
+  color: hsl(234, 100%, 69%);
 }
 
 .nav-button2 {
@@ -58,7 +58,7 @@ nav ul li a {
   right: 0;
   overflow-x: hidden;
 }
-  
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -297,7 +297,7 @@ a:active {
 }
 
 h2 {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -307,7 +307,7 @@ h2 {
   flex-direction: row;
   gap: 12px;
   padding: 0%;
-  align-items: center;  
+  align-items: center;
 }
 
 .tonic .canopy {
@@ -527,7 +527,6 @@ h2 {
   align-items: flex-start;
   justify-content: center;
   padding: 0;
-  /* gap: 12px; */
   width: 80%;
   height: 409px;
   top: 114px;
@@ -593,11 +592,6 @@ h2 {
   width: 200px;
   height: auto;
 }
-  
-.action {
-  display: flex;
-  margin-top: 0;
-}
 
 .action-last {
   box-sizing: border-box;
@@ -608,15 +602,15 @@ h2 {
   gap: 10px;
   width: 168px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   margin-top: 27%;
-  }
+}
 
 .normalbutton3 {
   width: 152px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -625,8 +619,8 @@ h2 {
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #396DF2;
-  }
+  color: #396df2;
+}
 
 .action .normalbutton2 a:hover {
   background: #6070ff;
@@ -686,7 +680,7 @@ h2 {
 #languages-dropdown {
   display: flex;
   flex-direction: row;
-  align-items:flex-end;
+  align-items: flex-end;
   width: 24px;
   height: 24px;
   border-radius: 8px;
@@ -816,7 +810,7 @@ h2 {
   width: 327px;
   background: #dfe1e6;
 }
-  
+
 .chevron1 {
   position: absolute;
   width: 24px;
@@ -871,7 +865,7 @@ h2 {
   align-items: center;
   color: #000;
 }
-  
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -970,7 +964,7 @@ h2 {
   .mobilemain {
     width: 100%;
     height: 5125px;
-    background: #F4F5F7;
+    background: #f4f5f7;
   }
 
   nav {
@@ -997,11 +991,11 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     width: 30%;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 20px;  
+    line-height: 20px;
   }
 
   .nav-button2 {
@@ -1011,7 +1005,7 @@ h2 {
   .headline {
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     width: 1440px;
     height: 846px;
     left: 0;
@@ -1027,8 +1021,8 @@ h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 0.37px;  
-    color: #091E42;
+    letter-spacing: 0.37px;
+    color: #091e42;
   }
 
   #paragraph1 {
@@ -1102,7 +1096,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     width: 297px;
     height: 40px;
@@ -1118,7 +1112,7 @@ h2 {
 
   .tonic .dot {
     width: 8px;
-    height: 8px;  
+    height: 8px;
   }
 
   .tonic .back {
@@ -1148,7 +1142,7 @@ h2 {
   .resources {
     gap: 8px;
     width: 203px;
-    height: 24px;  
+    height: 24px;
   }
 
   .action {
@@ -1161,10 +1155,9 @@ h2 {
     height: 48px;
     padding: 12px;
     gap: 10px;
-    /* top: 50%;  */
   }
 
-  .seeproject{
+  .seeproject {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
@@ -1188,19 +1181,10 @@ h2 {
     order: 1;
     padding: 24px;
     gap: 24px;
-    /* position: absolute; */
     width: 544px;
     height: 465px;
     left: 24px;
-    top: 24px; 
-  }
-
-  .paragraph2 {
-    width: 496px;
-    height: 70px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    top: 24px;
   }
 
   .aboutme {
@@ -1218,22 +1202,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     position: absolute;
     width: 447px;
     height: 392px;
     top: 7%;
     left: 7%;
-  }
-
-  #heading {
-    width: 50%;
-    height: auto;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    margin: 0;
   }
 
   .top #paragraph {
@@ -1247,7 +1222,7 @@ h2 {
   .secondheading5 {
     margin: 0;
   }
-  
+
   .frameicons {
     margin: 0;
   }
@@ -1255,12 +1230,12 @@ h2 {
   .action-last {
     margin-top: 10%;
   }
- 
+
   .skillslist {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     position: absolute;
     width: 684px;
     height: 360px;
@@ -1274,11 +1249,11 @@ h2 {
     padding: 0;
     width: 684px;
     height: 216px;
-  } 
+  }
 
   .frame7 {
     width: 684px;
-    height: 72px;      
+    height: 72px;
   }
 
   .languagelist {
@@ -1289,11 +1264,11 @@ h2 {
     gap: 12px;
     width: 414px;
     height: 144px;
-  }  
+  }
 
   .languagelist .jsbox {
     width: 122px;
-    height: 120px; 
+    height: 120px;
   }
 
   .jsimage {
@@ -1301,8 +1276,8 @@ h2 {
     height: 48px;
     position: absolute;
     top: 70px;
-    border: 1px solid #FFFFFF;
-  }  
+    border: 1px solid #fff;
+  }
 
   .jstext {
     width: 98px;
@@ -1323,7 +1298,7 @@ h2 {
     height: 48px;
     position: absolute;
     top: 56px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
   }
 
   .htmltext {
@@ -1332,7 +1307,7 @@ h2 {
     line-height: 20px;
     display: flex;
     align-items: center;
-    left: 25%;    
+    left: 25%;
   }
 
   .languagelist .cssbox {
@@ -1345,7 +1320,7 @@ h2 {
     height: 48px;
     position: absolute;
     top: 69px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
   }
 
   .csstext {
@@ -1367,7 +1342,7 @@ h2 {
     height: 24px;
     left: 24px;
     font-size: 20px;
-    line-height: 24px;  
+    line-height: 24px;
   }
 
   .chevron1 {
@@ -1409,7 +1384,7 @@ h2 {
     width: 604px;
     position: absolute;
     left: 0;
-    top: 80%;  
+    top: 80%;
   }
 
   .seperator2 {
@@ -1454,7 +1429,7 @@ h2 {
     height: auto;
     justify-content: center;
     text-align: center;
-    margin-left:0;
+    margin-left: 0;
   }
 
   .fieldset {
@@ -1466,7 +1441,6 @@ h2 {
 
   .form {
     height: auto;
-    padding-bottom: ;
   }
 
   .input-group {
@@ -1475,14 +1449,14 @@ h2 {
   }
 
   .text-area {
-    width:447px;
-    height:170px;
+    width: 447px;
+    height: 170px;
   }
 
   .form-button {
     width: 142px;
     height: 48px;
-    position:absolute;
+    position: absolute;
     left: 45%;
   }
 
@@ -1508,7 +1482,7 @@ h2 {
     width: 224px;
     height: 224px;
     left: 1208px;
-    top: 72px;  
+    top: 72px;
   }
 
   .ellipse11 {
@@ -1526,8 +1500,8 @@ h2 {
     height: 19.44px;
     left: 76.6px;
     top: 78.92px;
-    background: #EBEBFF;
-    transform: rotate(-46.14deg);  
+    background: hsl(240, 100%, 96%);
+    transform: rotate(-46.14deg);
   }
 
   .ellipse5 {
@@ -1570,7 +1544,7 @@ h2 {
     width: 47px;
     height: 47px;
     left: 839px;
-    top: 713px;  
+    top: 713px;
   }
 
   .rectangle5 {
@@ -1579,8 +1553,7 @@ h2 {
     height: 28.87px;
     left: 731.44px;
     top: 741px;
-    background: #EBEBFF;
+    background: hsl(240, 100%, 96%);
     transform: rotate(23.34deg);
   }
-
 }
