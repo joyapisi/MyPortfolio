@@ -1168,6 +1168,19 @@ left: -26%;
 h2 {
   font-size: 40px;
   font-weight: 700;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .tonic {
@@ -1221,6 +1234,15 @@ h2 {
   gap: 8px;
   width: 203px;
   height: 24px;  
+}
+
+.button {
+  transition: all 0.5s ease-out;
+}
+
+.button:hover, .button:focus {
+  background-color: #fff;
+  color: #333;
 }
 
 .action {
