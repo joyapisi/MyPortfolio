@@ -1091,6 +1091,20 @@ nav ul li {
   display: none;
 }
 
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 280%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
 .headline {
   justify-content: center;
   align-items: center;
@@ -1150,6 +1164,10 @@ left: -26%;
 #avator {
   width: 544px;
   height: 448px;
+}
+
+#avator:hover, #avator:focus {
+  rotate: 180deg;
 }
 
 .avator1 {
