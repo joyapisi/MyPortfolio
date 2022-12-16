@@ -870,6 +870,7 @@ border: 1px solid #fff;
   position: absolute;
   height: 1px;
   width: 327px;
+  /* top: 938.15px; */
   /* left: 24px;
   right: 24px;
   bottom: 201px; */
@@ -1136,6 +1137,7 @@ left: -26%;
   height: 2694px;
   left: 0;
   top: 917px;
+  justify-content: center;
 }
 
 .card1 {
@@ -1310,7 +1312,7 @@ h2 {
   display: flex;
   flex-direction: row; */
   width: 50%;
-  height: auto;
+  height: 50%;
 }
 
  .frame12 {
@@ -1327,9 +1329,9 @@ h2 {
   height: 72px;
 } */
 
-  .languagelist {
+.languagelist {
   display: flex;
-  flex-direction: row;
+  flex-direction: rowcolumn;
   align-items: center;
   padding: 12px;
   gap: 12px;
