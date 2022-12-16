@@ -904,15 +904,26 @@ border: 1px solid #fff;
   align-items: center;
   color: #000;
 }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> main
 .contact-form {
   display: flex;
   flex-direction: column;
   position: absolute;
+<<<<<<< HEAD
   width: 100%;
   height: 779px;
   left: 0;
   top: 5310px;
+=======
+  width: 375px;
+  height: 779px;
+  left: 0;
+  top: 4510px;
+>>>>>>> main
   background-image: url("./sources/Contact me.png");
 }
 
@@ -946,11 +957,18 @@ border: 1px solid #fff;
 
 .fieldset {
   margin-top: 75px;
+<<<<<<< HEAD
   border: none;
 }
 
 .input-group {
   width: 88%;
+=======
+}
+
+.input-group {
+  width: 312px;
+>>>>>>> main
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -998,6 +1016,7 @@ border: 1px solid #fff;
   color: #fff;
   background: #6070ff;
 }
+<<<<<<< HEAD
 
 @media screen and (min-device-width: 768px) {
   .mobilemain {
@@ -1497,3 +1516,5 @@ border: 1px solid #fff;
     top: 119px;
   }
 }
+=======
+>>>>>>> main
