@@ -1048,7 +1048,8 @@ border: 1px solid #fff;
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+
+    /* justify-content: space-between */
   }
 
   nav ul li a {
@@ -1096,7 +1097,7 @@ border: 1px solid #fff;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 0.37px;  
+    letter-spacing: 0.37px;
   }
 
   #paragraph1 {
@@ -1221,7 +1222,7 @@ border: 1px solid #fff;
 
   .action {
     width: 496px;
-    height: 153px;  
+    height: 153px; 
   }
 
   .normalbutton {
@@ -1229,6 +1230,7 @@ border: 1px solid #fff;
     height: 48px;
     padding: 12px;
     gap: 10px;
+    /* top: 50%;  */
   }
 
   .seeproject{
@@ -1279,8 +1281,6 @@ border: 1px solid #fff;
     width: 1440px;
     height: 924px;
     background-image: url("./sources/DesktopBackground/about\ myself\ -\ background-\ shape-\ desktop.png");
-    /* left: 1440px;
-    top: 4535px; */
   }
 
   .top {
@@ -1288,15 +1288,12 @@ border: 1px solid #fff;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 12px;
+    gap: 0;
     position: absolute;
     width: 447px;
     height: 392px;
     top: 20%;
     left: 7%;
-
-    /* left: 142px;
-    top: 3753px;   */
   }
 
   #heading {
@@ -1305,6 +1302,7 @@ border: 1px solid #fff;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    margin: 0;
   }
 
   .top #paragraph {
@@ -1315,11 +1313,20 @@ border: 1px solid #fff;
     height: 102px;
   }
 
+  .secondheading5 {
+    margin: 0;
+  }
+  
+  .frameicons {
+    margin: 0;
+  }
+
   .normalbutton3 {
     padding: 12px;
     margin-top: 0;
+    top: 67%;
   }
-
+ 
   .skillslist {
     display: flex;
     flex-direction: column;
@@ -1329,8 +1336,6 @@ border: 1px solid #fff;
     width: 684px;
     height: 360px;
     left: 45%;
-    /* left: 614px;
-    top: 3753px;   */
   }
 
   .frame12 {
@@ -1490,7 +1495,7 @@ border: 1px solid #fff;
     background-image: url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 846px;
-    top: 95%;
+    top: 88%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1565,7 +1570,7 @@ border: 1px solid #fff;
     width: 204px;
     height: 47px;
     left: 1146px;
-    top: 173px;
+    top: 53px;
     transform: rotate(-30deg);
   }
 
@@ -1574,7 +1579,7 @@ border: 1px solid #fff;
     width: 224px;
     height: 224px;
     left: 1208px;
-    top: 192px;  
+    top: 72px;  
   }
 
   .ellipse11 {
@@ -1582,7 +1587,7 @@ border: 1px solid #fff;
     width: 60.48px;
     height: 40.24px;
     left: 139.2px;
-    top: 260.68px;
+    top: 90.68px;
     transform: rotate(11.88deg);
   }
 
@@ -1591,7 +1596,7 @@ border: 1px solid #fff;
     width: 108.67px;
     height: 19.44px;
     left: 76.6px;
-    top: 248.92px;
+    top: 78.92px;
     background: #EBEBFF;
     transform: rotate(-46.14deg);  
   }
@@ -1601,7 +1606,7 @@ border: 1px solid #fff;
     width: 23px;
     height: 23px;
     left: 708px;
-    top: 257px;
+    top: 137px;
   }
 
   .rectangle7 {
@@ -1609,7 +1614,7 @@ border: 1px solid #fff;
     width: 56.01px;
     height: 10.02px;
     left: 693.25px;
-    top: 245.57px;
+    top: 125.57px;
     transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
   }
 
@@ -1617,8 +1622,8 @@ border: 1px solid #fff;
     position: absolute;
     width: 36.9px;
     height: 18.45px;
-    left: 290.7px;
-    top: 831.93px;
+    left: 255.7px;
+    top: 661.93px;
     transform: rotate(5.08deg);
   }
 
@@ -1626,8 +1631,8 @@ border: 1px solid #fff;
     position: absolute;
     width: 46px;
     height: 46px;
-    left: 276.06px;
-    top: 845.37px;
+    left: 241.06px;
+    top: 675.37px;
     transform: rotate(5.41deg);
   }
 
@@ -1636,7 +1641,7 @@ border: 1px solid #fff;
     width: 47px;
     height: 47px;
     left: 839px;
-    top: 883px;  
+    top: 713px;  
   }
 
   .rectangle5 {
@@ -1644,7 +1649,7 @@ border: 1px solid #fff;
     width: 161.41px;
     height: 28.87px;
     left: 731.44px;
-    top: 911px;
+    top: 741px;
     background: #EBEBFF;
     transform: rotate(23.34deg);
   }
