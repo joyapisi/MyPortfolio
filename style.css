@@ -133,9 +133,10 @@ li {
   list-style: none;
 }
 
-.background-images{
+.background-images {
   display: none;
 }
+
 .rectangle4 {
   position: absolute;
   width: 95.58px;
@@ -276,13 +277,7 @@ a:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* padding: 142px; */
   gap: 142px;
-
-  /* gap: 10px auto; */
-
-  /* align-items: center; */
   padding: 114px 24px;
   position: absolute;
   width: 375px;
@@ -1468,7 +1463,7 @@ h2 {
   .contact-form {
     background-image: url("./sources/contact\ form\ background\ shapes.png"), url("./sources/contactmedesktop.png");
     width: 1440px;
-    height:  750px;
+    height: 750px;
     top: 85%;
     display: flex;
     flex-direction: column;
