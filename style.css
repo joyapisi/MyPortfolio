@@ -274,8 +274,9 @@ a:active {
 
   /* padding: 142px; */
   gap: 142px;
-   
+
   /* gap: 10px auto; */
+
   /* align-items: center; */
   padding: 114px 24px;
   position: absolute;
@@ -665,6 +666,7 @@ h2 {
   flex-direction: row;
   width: 327px;
   height: 72px;
+
   /* gap: 55%; */
 }
 
@@ -688,7 +690,6 @@ h2 {
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 70%;
   border-radius: 8px;
   transform: rotate(90deg) !important;
   left: 75%;
@@ -714,7 +715,6 @@ h2 {
   top: 12px;
   display: grid;
   grid-row: 1fr/1fr;
-  left: 0;
   justify-content: space-between;
 }
 
@@ -806,7 +806,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;  
+  line-height: 20px;
   color: #253858;
 }
 
@@ -822,13 +822,11 @@ h2 {
   position: absolute;
   height: 24px;
   left: 24px;
-  font-size: 20px;
   line-height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   display: flex;
   align-items: center;
   color: #000;
@@ -1390,7 +1388,7 @@ h2 {
     top: 39%;
   }
 
-  .frameworks-skills{
+  .frameworks-skills {
     margin: 0;
     padding: 0;
   }
@@ -1444,7 +1442,7 @@ h2 {
     padding: 8px;
     position: absolute;
     left: 75%;
-    top:75%;
+    top: 75%;
   }
 
   .seperator1 {
@@ -1465,7 +1463,7 @@ h2 {
   .contact-form {
     background-image: url("./sources/contact\ form\ background\ shapes.png"), url("./sources/contactmedesktop.png");
     width: 1440px;
-    height: 800px;
+    height: 1000px;
     top: 88%;
     display: flex;
     align-items: center;
