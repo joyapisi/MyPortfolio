@@ -526,14 +526,17 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 12px;
   padding: 0;
-  width: 80%;
+  width: 327px;
   height: 409px;
   top: 114px;
   left: 24px;
 }
 
 .top #heading {
+  display: flex;
+  align-items: center;
   width: 327px;
   height: 101px;
   font-family: 'Poppins', sans-serif;
@@ -541,8 +544,6 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
 }
 
@@ -554,8 +555,6 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   color: #344563;
 }
 
@@ -569,12 +568,13 @@ h2 {
 }
 
 .socialmedia #secondheading5 {
-  display: flex;
+  
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   padding: 0;
   width: 120px;
-  height: auto;
+  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -588,9 +588,9 @@ h2 {
   flex-direction: row;
   justify-content: space-between !important;
   align-items: center;
-  padding: 7.99px 4px;
+  padding: 0;
   width: 200px;
-  height: auto;
+  height: 40px;
 }
 
 .action-last {
@@ -608,6 +608,9 @@ h2 {
 }
 
 .normalbutton3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
   width: 152px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
@@ -615,9 +618,6 @@ h2 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #396df2;
 }
@@ -643,7 +643,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 90%;
+  width: 327px;
   height: 464.15px;
 }
 
@@ -653,15 +653,15 @@ h2 {
   align-items: flex-start;
   padding: 0;
   width: 327px;
-  height: auto;
+  height: 320.15px;
 }
 
 .frame7 {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 327px;
   height: 72px;
-  gap: 60%;
+  /* gap: 55%; */
 }
 
 #languages {
@@ -673,7 +673,7 @@ h2 {
   line-height: 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: absolute;
   color: #000;
 }
 
@@ -681,10 +681,13 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 24px;
-  height: 24px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 70%;
   border-radius: 8px;
   transform: rotate(90deg) !important;
+  left: 75%;
 }
 
 .languagelist {
@@ -707,22 +710,26 @@ h2 {
   top: 12px;
   display: grid;
   grid-row: 1fr/1fr;
+  left: 0;
+  justify-content: space-between;
 }
 
 .jsimage {
   position: absolute;
+  order: 1;
   width: 48px;
   height: 48px;
   border: 1px solid #fff;
+  left: 12%;
 }
 
 .jstext {
   position: absolute;
+  order: 2;
   height: 24px;
   align-items: center;
-  float: right;
-  left: 28%;
-  margin-top: 4%;
+  left: 29%;
+  top: 58.5%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -740,28 +747,29 @@ h2 {
   grid-row: 1fr/1fr;
 }
 
+.htmlimage {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: url(html5-512.png);
+  border: 1px solid #fff;
+  order: 1;
+  left: 12%;
+}
+
 .htmltext {
   position: absolute;
+  order: 2;
   height: 24px;
-  left: 28%;
-  margin-top: 4%;
+  align-items: center;
+  left: 29%;
+  top: 64.5%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   color: #253858;
-}
-
-.htmlimage {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  margin-top: 2%;
-  background: url(html5-512.png);
-  border: 1px solid #fff;
 }
 
 .cssbox {
@@ -773,27 +781,29 @@ h2 {
   border-radius: 8px;
 }
 
-.csstext {
-  position: absolute;
-  height: 24px;
-  left: 28%;
-  margin-top: 4%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
-}
-
 .cssimage {
   position: absolute;
   width: 48px;
   height: 48px;
   background: url(images.jpg);
   border: 1px solid #fff;
+  order: 1;
+  left: 12%;
+}
+
+.csstext {
+  position: absolute;
+  order: 2;
+  height: 24px;
+  align-items: center;
+  left: 29%;
+  top: 71%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;  
+  color: #253858;
 }
 
 .frame8 {
@@ -804,23 +814,12 @@ h2 {
   justify-content: space-between;
 }
 
-.seperator1 {
-  position: absolute;
-  height: 1px;
-  width: 327px;
-  background: #dfe1e6;
-}
-
-.chevron1 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border-radius: 8px;
-}
-
 .frameworks {
+  position: absolute;
   height: 24px;
-  left: 12px;
+  left: 24px;
+  font-size: 20px;
+  line-height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -829,6 +828,18 @@ h2 {
   display: flex;
   align-items: center;
   color: #000;
+}
+
+.chevron1 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 8px;
+  position: absolute;
+  left: 75%;
+  border-radius: 8px;
 }
 
 .frame9 {
@@ -839,23 +850,22 @@ h2 {
   justify-content: space-between;
 }
 
-.seperator2 {
-  position: absolute;
-  height: 1px;
-  width: 327px;
-  background: #dfe1e6;
-}
-
 .chevron2 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 8px;
   position: absolute;
-  width: 24px;
-  height: 24px;
+  left: 75%;
   border-radius: 8px;
 }
 
 .skills {
   position: absolute;
   height: 24px;
+  left: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -864,6 +874,24 @@ h2 {
   display: flex;
   align-items: center;
   color: #000;
+}
+
+.seperator1 {
+  position: absolute;
+  height: 1px;
+  width: 327px;
+  background: #dfe1e6;
+  top: 83%;
+  left: 6%;
+}
+
+.seperator2 {
+  position: absolute;
+  height: 1px;
+  width: 327px;
+  background: #dfe1e6;
+  top: 88%;
+  left: 6%;
 }
 
 .contact-form {
@@ -970,8 +998,6 @@ h2 {
   nav {
     display: flex;
     flex-direction: row;
-
-    /* justify-content: space-between */
   }
 
   nav ul li a {
@@ -1203,12 +1229,16 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 24px;
     position: absolute;
     width: 447px;
     height: 392px;
     top: 7%;
     left: 7%;
+  }
+
+  .top #heading {
+    margin: 0;
+    padding: 0;
   }
 
   .top #paragraph {
@@ -1217,6 +1247,8 @@ h2 {
     line-height: 24px;
     width: 447px;
     height: 102px;
+    padding: 0;
+    margin: 0;
   }
 
   .secondheading5 {
@@ -1225,6 +1257,7 @@ h2 {
 
   .frameicons {
     margin: 0;
+    padding: 0;
   }
 
   .action-last {
@@ -1240,6 +1273,7 @@ h2 {
     width: 684px;
     height: 360px;
     left: 45%;
+    top: 8%;
   }
 
   .frame12 {
@@ -1269,14 +1303,16 @@ h2 {
   .languagelist .jsbox {
     width: 122px;
     height: 120px;
+    padding: 0;
   }
 
   .jsimage {
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 70px;
+    top: 78px;
     border: 1px solid #fff;
+    left: 4%;
   }
 
   .jstext {
@@ -1286,19 +1322,22 @@ h2 {
     display: flex;
     align-items: center;
     left: 4%;
+    top: 39%;
   }
 
   .languagelist .htmlbox {
     width: 122px;
     height: 120px;
+    padding: 0;
   }
 
   .htmlimage {
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 56px;
+    top: 78px;
     border: 1px solid #fff;
+    left: 25%;
   }
 
   .htmltext {
@@ -1307,20 +1346,23 @@ h2 {
     line-height: 20px;
     display: flex;
     align-items: center;
-    left: 25%;
+    left: 26%;
+    top: 39%;
   }
 
   .languagelist .cssbox {
     width: 122px;
     height: 120px;
+    padding: 0;
   }
 
   .cssimage {
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 69px;
+    top: 78px;
     border: 1px solid #fff;
+    left: 46%;
   }
 
   .csstext {
@@ -1329,7 +1371,13 @@ h2 {
     line-height: 20px;
     display: flex;
     align-items: center;
-    left: 46.5%;
+    left: 47%;
+    top: 39%;
+  }
+
+  .frameworks-skills{
+    margin: 0;
+    padding: 0;
   }
 
   .frame8 {
