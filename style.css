@@ -267,14 +267,22 @@ a:active {
 }
 
 .works {
-  display: grid;
-  gap: 10px auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  /* padding: 142px; */
+  gap: 142px;
+   
+  /* gap: 10px auto; */
+  /* align-items: center; */
   padding: 114px 24px;
   position: absolute;
   width: 375px;
   height: 2788px;
   left: 0;
+  right: 30%;
   top: 718px;
 }
 
@@ -993,6 +1001,7 @@ h2 {
     width: 100%;
     height: 5125px;
     background: #f4f5f7;
+    overflow-y: hidden;
   }
 
   nav {
@@ -1085,7 +1094,6 @@ h2 {
     height: 2694px;
     left: 0;
     top: 917px;
-    justify-content: center;
   }
 
   .card1 {
@@ -1261,7 +1269,7 @@ h2 {
   }
 
   .action-last {
-    margin-top: 10%;
+    margin-top: 6%;
   }
 
   .skillslist {
@@ -1288,6 +1296,16 @@ h2 {
   .frame7 {
     width: 684px;
     height: 72px;
+    gap: 0;
+  }
+
+  #languages {
+    position: absolute;
+    height: 24px;
+    left: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .languagelist {
@@ -1391,6 +1409,7 @@ h2 {
     left: 24px;
     font-size: 20px;
     line-height: 24px;
+    top: 53%;
   }
 
   .chevron1 {
@@ -1402,6 +1421,7 @@ h2 {
     padding: 8px;
     position: absolute;
     left: 75%;
+    top: 55%;
   }
 
   .frame9 {
@@ -1415,6 +1435,7 @@ h2 {
     left: 24px;
     font-size: 20px;
     line-height: 24px;
+    top: 73%;
   }
 
   .chevron2 {
@@ -1426,20 +1447,21 @@ h2 {
     padding: 8px;
     position: absolute;
     left: 75%;
+    top:75%;
   }
 
   .seperator1 {
     width: 604px;
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 73%;
   }
 
   .seperator2 {
     width: 604px;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 93%;
   }
 
   /* Last Page */
@@ -1494,6 +1516,7 @@ h2 {
   .input-group {
     width: 447px;
     height: 48px;
+    border-radius: 0;
   }
 
   .text-area {
