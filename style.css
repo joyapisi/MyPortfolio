@@ -576,10 +576,6 @@ h2 {
 }
 
 .socialmedia #secondheading5 {
-  
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
   padding: 0;
   width: 120px;
   height: 24px;
@@ -1091,16 +1087,15 @@ h2 {
 
   .works {
     width: 1440px;
-    height: 2694px;
-    left: 0;
-    top: 917px;
+    height: 2800px;
   }
 
   .card1 {
-    width: 1156px;
-    height: 496px;
+    width: 82%;
+    height: auto;
     display: flex;
     flex-direction: row;
+    margin-right: 5%;
   }
 
   #avator {
@@ -1200,7 +1195,9 @@ h2 {
   .card2 {
     display: flex;
     flex-direction: row;
-    width: 1156px;
+    width: 82%;
+    height: auto;
+    margin-right: 5%;
   }
 
   .avator4 {
@@ -1466,9 +1463,9 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image: url("./sources/contactmedesktop.png");
+    background-image: url("./sources/contact\ form\ background\ shapes.png"), url("./sources/contactmedesktop.png");
     width: 1440px;
-    height: 846px;
+    height: 800px;
     top: 88%;
     display: flex;
     align-items: center;
