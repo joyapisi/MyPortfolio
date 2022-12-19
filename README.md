@@ -50,7 +50,6 @@ Use images and backgrounds to enhance the look of your website.
 ## 😎 Live Demo <a name="live-demo"></a>
 Click here to see a live demo of this project online: <li><a href="https://joyapisi.github.io/MyPortfolio/">Git Hub</a></li>
 
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -215,8 +214,8 @@ How can I download figma images?
   - [Answer_1]
 You can watch this video to understand hpw you can download figma images and use CSS provided in figma:
 <ul>
-    <li><a href="https://www.loom.com/embed/167236d17f104fc18298c5c9888354c9">Git Hub</a></li>
-  </ul>
+  <li><a href="https://www.loom.com/embed/167236d17f104fc18298c5c9888354c9">Git Hub</a></li>
+</ul>
 
 - **[Question_2]**
 Where can I download node JS for installation?
