@@ -62,11 +62,13 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+<ul>
 -A Git hub account
 -Git bash
 -Node JS
 -Visual Studio Code as your code editor
 -Figma account
+</ul>
 
 ### Setup
 
@@ -74,7 +76,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone[ (https://github.com/joyapisi/Hello-world.git)]
+  git clone[ (https://github.com/joyapisi/MyPortfolio.git)]
 ```
 ### Set Up Linters
 ## Define Linters
