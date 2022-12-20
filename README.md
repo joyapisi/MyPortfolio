@@ -7,7 +7,7 @@ Portfolio setup and Mobile First. Day 3 Microverse Project
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-- [😎 Live Demo](#live-demo)    
+- [🚀 Live Demo](#live-demo)    
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,7 +47,7 @@ Use images and backgrounds to enhance the look of your website.
 
 <!-- LIVE DEMO -->
 
-## 😎 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 Click here to see a live demo of this project online: <li><a href="https://joyapisi.github.io/MyPortfolio/">Live Demo</a></li>
 
 <!-- GETTING STARTED -->
