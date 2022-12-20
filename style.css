@@ -59,6 +59,20 @@ nav ul li a {
   overflow-x: hidden;
 }
 
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 280%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -395,9 +409,9 @@ h2 {
 
 .button {
   height: 24px;
-  background-color: hsl(240, 100%, 96%);
+  background-color: hsl(240, 72%, 94%);
   border: none;
-  color: #6070ff;
+  color: #212658;
   text-align: center;
   text-decoration: none;
   padding: 4px 12px;
@@ -425,20 +439,25 @@ h2 {
   width: 89px;
 }
 
-.button a:hover {
-  background: #6070ff;
+.button a:hover, a:focus {
+  background: #4854c3;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .button a:visited {
-  background: #2230d2;
+  background: #202ec8;
   border-radius: 8px;
 }
 
 .button a:disabled {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
+}
+
+.button:hover, .button:focus {
+  background-color: #fff;
+  color: #333;
 }
 
 .action {
@@ -453,7 +472,7 @@ h2 {
 .action .normalbutton {
   width: 124px;
   height: 48px;
-  color: #396df2;
+  color: #325fd2;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -461,20 +480,23 @@ h2 {
   padding: 12px;
   gap: 10px;
   position: absolute;
-  border: 1px solid #6070ff;
+  border: 1px solid #6a78fb;
   border-radius: 8px;
   margin-top: 3.5%;
+  transition: color 0.3s ease;
 }
 
-.action .normalbutton a:hover {
+.action .normalbutton a:hover, a:focus {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  color: #fff;
 }
 
 .action .normalbutton a:visited {
   background: #2230d2;
   border-radius: 8px;
+  color: rgb(237, 235, 235);
 }
 
 .action .normalbutton a:disabled {
@@ -1117,6 +1139,18 @@ h2 {
   h2 {
     font-size: 40px;
     font-weight: 700;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .tonic {
