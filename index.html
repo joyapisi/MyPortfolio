@@ -7,56 +7,56 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
     <title>Portfolio</title>
-  
 </head>
 
 <body>
   
-
   <header>
-    <nav>
+    <nav title="navigation-bar">
       <button class="nav-button1">
         <span class="logo">Joy</span>
       </button>
   
-        <ul class="ul-nav">
-         <li><a href="#">Portfolio</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
+        <ul class="ul-nav" title="navigation-list">
+         <li><a href="#portfolio">Portfolio</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#contactme">Contact</a></li>
         </ul>
         
-        <button class="nav-button2">
-          <span> <img src="./sources/Hamburg" alt="hamburg"></span>
-        </button>
-      
+      <button class="nav-button2">
+        <span> 
+          <img src="./sources/Hamburg" alt="hamburg">
+        </span>
+      </button>
     </nav>
   </header>
 
-
-<section class="mobilemain">
+<!--Page 1-->
+<section class="mobilemain" id="about" title="Joy's-Portfolio-Home-page">
  <article class="headline">
    <h1 id="heading">I’m Joy<br>
      Glad to see you!</h1>
    
    <p id="paragraph1">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
 
-   <div class="smedia">
+   <div class="smedia" title="social-media-accounts">
    
    <h5 id="heading5">LET’S CONNECT</h5>
    
    <ul class="topicons">
-     <li><a href="#"> <img src="sources/Vector4.png"></a></li>    
-     <li><a href="#"> <img src="sources/linkedin.png"></a></li>     
-     <li><a href="#"> <img src="sources/Vector5.png"></a></li>        
-     <li><a href="#"> <img src="sources/Vector1.png"></a></li>        
-     <li><a href="#"> <img src="sources/Vector3.png"></a></li>   
+     <li><a href="#"> <img src="sources/Vector4.png" alt="twitter"></a></li>    
+     <li><a href="#"> <img src="sources/linkedin.png" alt="linkedin"></a></li>     
+     <li><a href="#"> <img src="sources/Vector5.png" alt="medium"></a></li>        
+     <li><a href="#"> <img src="sources/Vector1.png" alt="github"></a></li>        
+     <li><a href="#"> <img src="sources/Vector3.png" alt="chill"></a></li>   
    </ul>
    
   </div>
+
  </article>
 
 <!--page 2-->
-  <section class="works">
+  <section class="works" id="portfolio" title="works-card-1">
   
     <div class="card1 cards">
       <img class="avator3" id="avator" src="sources/snap.png" alt="Avatar">
@@ -67,29 +67,29 @@
         <li><a class="tonic canopy" href="#">CANOPY</a></li>
         <li class="tonic dot"></li>
         <li class="tonic back">Back End Dev</li>
-         <li class="tonic dot"></li>
-         <li class="tonic year">2015</li>
+        <li class="tonic dot"></li>
+        <li class="tonic year">2015</li>
        </ul>
 
-       <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+       <p class="paragraph2" title="description of works card 1">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
      
-        <ul class="resources">
+        <ul class="resources" title="resources">
           <li><a  class="button" href="#">HTML</a> <li>
           <li><a  class="button" href="#">CSS</a> </li>
           <li><a  class="button" href="#">javaScript</a></li>      
         </ul>
-  
-        <div class="action"> 
-          <form class="normalbutton">
-            <a class="seeproject"  href="#">See Project</a> 
-          </form> 
-      </div> 
+ 
+          <div class="action" title="button to see project "> 
+            <form class="normalbutton">
+              <a class="seeproject"  href="#">See Project</a> 
+            </form> 
+          </div> 
       
       </div>
     </div>
 
   <!--Page 3-->
-     <div class="card2 cards">
+     <div class="card2 cards" title="works-card-2">
       <img class="avator4" id="avator" src="sources/Portfolio2.png" alt="Avatar">
       <div class="container2">
         <h2><b>Multi-Post</br>
@@ -105,13 +105,13 @@
 
        <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
      
-       <ul class="resources">
+       <ul class="resources" title="resources">
         <li><a  class="button" href="#">HTML</a> <li>
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action"> 
+        <div class="action" title="button-to-see-project"> 
           <form class="normalbutton">
             <a class="seeproject"  href="#">See Project</a> 
           </form> 
@@ -122,7 +122,7 @@
 
     <!--page 4--> 
     
-    <div class="card1">
+    <div class="card1" title="works-card-3">
       <img class="avator1" id="avator" src="sources/Portfolio3.png" alt="Avatar">
       <div class="container">
         <h2><b>Tonic</b></h2>
@@ -137,13 +137,13 @@
 
        <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
      
-       <ul class="resources">
+       <ul class="resources" title="resources">
         <li><a  class="button" href="#">HTML</a> <li>
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action"> 
+        <div class="action" title="button-to-see-project"> 
           <form class="normalbutton">
             <a class="seeproject"  href="#">See Project</a> 
           </form> 
@@ -153,7 +153,7 @@
     </div>
   
    <!-- page 5-->
-    <div class="card2">
+    <div class="card2" title="works-card-4">
       <img class="avator4" id="avator" src="sources/Portfolio4.png" alt="Avatar">
       <div class="container2">
         <h2><b>Multi-Post</br>
@@ -169,13 +169,13 @@
 
        <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
      
-       <ul class="resources">
+       <ul class="resources" title="resources">
         <li><a  class="button" href="#">HTML</a> <li>
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action"> 
+        <div class="action" title="button-to-see-project"> 
           <form class="normalbutton">
             <a class="seeproject"  href="#">See Project</a> 
           </form> 
@@ -186,55 +186,55 @@
   </section>
  
   <!--Page 6-->
-<article class="aboutme">
+<article class="aboutme" title="about-me">
   
   <section class="top">
-    <h2 id="heading">About <br>Myself</h2>
+    <h2 id="heading">About<br>Myself</h2>
     <p id="paragraph">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     
-    <div class="socialmedia">
+    <div class="socialmedia" title="social-media-accounts">
      <h4 id="secondheading5">LET’S CONNECT</h4>
        
      <ul class="frameicons">
-      <li><a href="#"><img id="twitter"  src="sources/Vector4.png"></a></li>    
-      <li><a href="#"><img id="linkedin" src="sources/linkedin.png"></a></li>     
-      <li><a href="#"><img id="medium"   src="sources/Vector5.png"></a></li>        
-      <li><a href="#"><img id="github"  src="sources/Vector1.png"></a></li>        
-      <li><a href="#"><img id="peace"  src="sources/Vector3.png"></a></li>   
+      <li><a href="#"><img id="twitter"  src="sources/Vector4.png" alt="twitter"></a></li>    
+      <li><a href="#"><img id="linkedin" src="sources/linkedin.png" alt="linkedin"></a></li>     
+      <li><a href="#"><img id="medium"   src="sources/Vector5.png" alt="medium"></a></li>        
+      <li><a href="#"><img id="github"  src="sources/Vector1.png" alt="github"></a></li>        
+      <li><a href="#"><img id="peace"  src="sources/Vector3.png" alt="peace"></a></li>   
      </ul>
     </div>  
 
   </div>
      
-  <div class="action-last">
+  <div class="action-last" title="get-my-resume-button">
     <a class="normalbutton3"  href="#">Get my resume</a> 
   </div>
     
   </section>
 
-  <section class="skillslist">
+  <section class="skillslist" title="programming-languages-skills">
     <div class="frame12">
 
       <div class="frame7">  
         <li id="languages"><h4>Languages</h4></li>
-        <li><img id="languages-dropdown" src="./sources/LanguagesChevron.png" alt="dropdown"></li>
+        <li><img id="languages-dropdown" src="./sources/LanguagesChevron.png" alt="languages-dropdown"></li>
       </div>
       
-      <ul class="languagelist">
+      <ul class="languagelist" title="list-of-programming-languages">
         
         <li class="languagelist jsbox"> 
          
-           <img class="jsimage" src="./sources/js.png" alt=""></li>
+           <img class="jsimage" src="./sources/js.png" alt="js-image"></li>
            <h7 class="jstext">JavaScript</h7>
         
         <li class="languagelist htmlbox"> 
           
-          <img class="htmlimage" src="./sources/s.png" alt=""></li>
+          <img class="htmlimage" src="./sources/s.png" alt="html-image"></li>
           <h7 class="htmltext">HTML</h7>
         
         <li class="languagelist cssbox"> 
           
-          <img class="cssimage" src="./sources/css.png" alt=""></li> 
+          <img class="cssimage" src="./sources/css.png" alt="css-image"></li> 
           <h7 class="csstext">CSS</h7>  
           
       </ul>
@@ -242,110 +242,48 @@
  
     <ul class="frameworks-skills">
     
-     <li class="frame8">
+     <li class="frame8" title="frameworks">
        <ul>
         <li><h4 class="frameworks">Frameworks</h4></li>
-        <li><img class="chevron1" src="./sources/Chevron1.png" alt=""></li>
+        <li><img class="chevron1" src="./sources/Chevron1.png" alt="chevron-1"></li>
 
-        <img class="seperator1" src="./sources/Separator1.png" alt="">
+        <img class="seperator1" src="./sources/Separator1.png" alt="seperator-1">
 
        </ul>
      </li>
     
-     <li class="frame9">
+     <li class="frame9" title="skills">
       <ul>
         <li><h4 class="skills">Skills</h4></li>
-        <li><img class="chevron2" src="./sources/Chevron2.png" alt=""></li>
+        <li><img class="chevron2" src="./sources/Chevron2.png" alt="chevron-2"></li>
 
-        <img class="seperator2" src="./sources/Separator2.png" alt="">
+        <img class="seperator2" src="./sources/Separator2.png" alt="seperator-2">
       </ul>
 
-           </li>
+     </li>
     </ul> 
 
-     
 </section>
 </article>
  
 <!--page 7-->
-<section class="contact-form">
+<section class="contact-form" id="contactme" title="contact-form">
 <div class="contactbody">
   <h2 class="contact-me">Contact me</h2>
   <p class="info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
   
-  <fieldset class="fieldset">
+  <fieldset class="fieldset" title="enter-your-contacts-form">
     <form class= "form" action="https://formspree.io/f/xbjbneev" method="post">
       <ul>
-        <li><input class="input-group" type="text" maxlength="30" name="name" placeholder="Your Name" required></li>
-        <li><input class="input-group" type="email" name="email" placeholder="Your Email" required></li>
-        <li><textarea class="input-group text-area" name="user_message" maxlength="500" placeholder="Write your message here" required></textarea></li>
+        <li><input class="input-group" type="text" maxlength="30" name="name" placeholder="Your Name*" required></li>
+        <li><input class="input-group" type="email" name="email" placeholder="Your Email*" required></li>
+        <li><textarea class="input-group text-area" name="user_message" maxlength="500" placeholder="Write your message here*" required></textarea></li>
         <button class="form-button" type="submit">Get in Touch</button>
       </ul>
     </form>
   </fieldset>
 </div>
 </section>
-
-<!--Background-->
-
-  <section class="background-images">
-    <ul>
-       
-      <li><img class="rectangle4" src="sources/Rectangle 4.png"></li>
-  
-      <li><img class="ellipse3" src="sources/Ellipse 3.png" alt=""></li>
-      
-      <li><img class="ellipse15" src="sources/Ellipse 15.png" alt=""></li>
-      
-      <li><img class="ellipse14" src="sources/Ellipse 14.png" alt=""></li>
-      
-      <li><img class="ellipse8" src="sources/Ellipse 8.png" alt=""></li>
-      
-      <li><img class="ellipse11" src="sources/Ellipse 11.png" alt=""></li>
-      
-      <li><img class="rectangle6" src="sources/Rectangle 6.png" alt=""></li>
-      
-       
-      <li><img class="ellipse12" src="sources/Ellipse 12.png" alt=""></li>
-      
-      <li><img class="ellipse13" src="sources/Ellipse 13.png" alt=""></li>
-      
-      <li><img class="ellipse4" src="sources/Ellipse 4.png" alt=""></li>
-  
-      <li><img class="rectangle5" src="sources/Rectangle 5.png" alt=""></li>
-      
-      <li><img class="ellipse5" src="sources/Ellipse 5.png" ></li>
-      
-      <li><img class="rectangle7" src="sources/Rectangle 7.png" alt=""></li>
-    </ul>
-  </section>
-
-  <section class="background-images2">
-    <ul>
-       
-      <li><img class="rectangle4" src="sources/DesktopBackground/Rectangle 4 (1).png"></li>
-  
-      <li><img class="ellipse3" src="sources/DesktopBackground/Ellipse 3.png" alt=""></li>
-         
-      <li><img class="rectangle6" src="sources/DesktopBackground/Rectangle 6.png" alt=""></li>
-
-      <li><img class="ellipse11" src="sources/DesktopBackground/Ellipse 11 (1).png" alt=""></li>
-      
-      <li><img class="ellipse13" src="sources/DesktopBackground/Ellipse 13.png" alt=""></li>
-      
-      <li><img class="ellipse12" src="sources/DesktopBackground/Ellipse 12.png" alt=""></li>
-      
-      <li><img class="ellipse4" src="sources/DesktopBackground/Ellipse 4(1).png" alt=""></li>
-      
-       
-      <li><img class="rectangle5" src="sources/DesktopBackground/Rectangle 5(1).png" alt=""></li>
-      
-      <li><img class="ellipse5" src="sources/DesktopBackground/Ellipse 5.png" alt=""></li>
-      
-      <li><img class="rectangle7" src="sources/DesktopBackground/Rectangle 7.png" alt=""></li>
-  
-    </ul>
-  </section>
 
 
     </body>
