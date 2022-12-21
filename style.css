@@ -68,6 +68,7 @@ h1 {
   from {
     margin-left: 280%;
   }
+
   to {
     margin-right: 20%;
   }
@@ -317,7 +318,8 @@ h2 {
   width: 89px;
 }
 
-.button a:hover, a:focus {
+.button a:hover,
+.button a:focus {
   background: #4854c3;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
@@ -333,7 +335,8 @@ h2 {
   border-radius: 8px;
 }
 
-.button:hover, .button:focus {
+.button:focus,
+.button:hover {
   background-color: #fff;
   font-size: 16px;
   color: #333;
@@ -364,7 +367,10 @@ h2 {
   margin-top: 3.5%;
 }
 
-.normalbutton a:hover, a:focus, .seeproject a:hover, a:focus {
+.normalbutton a:hover,
+.normalbutton a:focus,
+.seeproject a:hover,
+.seeproject a:focus {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -527,14 +533,14 @@ h2 {
   color: #396df2;
 }
 
-.action .normalbutton2 a:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+.action .normalbutton2 a:visited {
+  background: #2230d2;
   border-radius: 8px;
 }
 
-.action .normalbutton2 a:visited {
-  background: #2230d2;
+.action .normalbutton2 a:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
 
@@ -908,7 +914,8 @@ h2 {
     padding: 5%;
   }
 
-  nav ul li a:hover, a:active {
+  nav ul li a:active,
+  nav ul li a:hover {
     color: #000;
   }
 
@@ -1029,6 +1036,7 @@ h2 {
       margin-left: 100%;
       width: 300%;
     }
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -1181,13 +1189,15 @@ h2 {
 
   .action-last {
     margin-top: 6%;
- }
+  }
 
-  .action-last:hover, .action-last:active {
+  .action-last:hover,
+  .action-last:active {
     animation: color-me-in 1.5s;
   }
-  
-  .normalbutton3:hover, .normalbutton3:active {
+
+  .normalbutton3:hover,
+  .normalbutton3:active {
     animation: color-me-in 1.5s;
   }
 
@@ -1196,6 +1206,7 @@ h2 {
       color: #396df2;
       background-color: #fff;
     }
+
     100% {
       color: #fff;
       background-color: #2a2a2a;
@@ -1462,5 +1473,4 @@ h2 {
     position: absolute;
     left: 45%;
   }
-
 }
