@@ -8,7 +8,7 @@ Portfolio setup and Mobile First. Day 3 Microverse Project
   - [🛠 Built With](#built-with)
     -[Tech Stack](#tech-stack)
 - [🚀 Live Demo](#live-demo) 
-- [👩🏽Video exolanation] (#video-explanation)   
+- [👩 🏽Video exolanation](#video-explanation)   
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
