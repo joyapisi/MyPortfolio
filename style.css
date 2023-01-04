@@ -38,7 +38,10 @@ nav {
 }
 
 .ul-nav {
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  gap: 6%;
   transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
@@ -46,13 +49,29 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 99;
-  background:  #6171ff;
+  background: #6171ff;
   color: white;
   list-style: none;
   padding-top: 4rem;
 }
 
-.ul-nav .showMenu {
+.navigationList {
+  /* position: absolute; */
+  height: 24px;
+  left: 0px;
+  right: 68px;
+  top: calc(50% - 24px/2);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.showMenu {
   transform: translateY(0);
 }
 
@@ -71,6 +90,11 @@ nav {
 
 .closeIcon {
   display: none;
+  /* color: #fff; */
+}
+
+.menuIcon {
+  color: #6171ff;
 }
 
 .mobilemain {
@@ -968,6 +992,27 @@ h2 {
 
   .nav-button2 {
     display: none;
+  }
+
+
+  .navigationList {
+    display: flex;
+    transform: none;
+    transition: none;
+    background: none;
+    position: unset;
+    padding-top: 0;
+    flex-direction: row;
+    color: #000;
+    padding-right: 10%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .headline {
