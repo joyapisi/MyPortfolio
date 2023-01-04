@@ -27,7 +27,7 @@ nav {
 .logo {
   width: 40%;
   height: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -38,63 +38,75 @@ nav {
 }
 
 .ul-nav {
-  display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   gap: 6%;
   transform: translateY(-100%);
-  transition: transform 0.2s;
+  transition: transform 0.3s;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
-  background: #6171ff;
-  color: white;
+  z-index: 4;
+  height: 100vh;
+  background: #6070ff;
   list-style: none;
   padding-top: 4rem;
+  mix-blend-mode: multiply;
 }
 
 .navigationList {
-  /* position: absolute; */
-  height: 24px;
-  left: 0px;
-  right: 68px;
-  top: calc(50% - 24px/2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.showMenu {
+.ul-nav.active {
+  display: flex;
   transform: translateY(0);
 }
 
 .nav-button2 {
-  display: flex;
-  flex-direction: col;
-  align-items: flex-start;
-  right: 24px;
-  border: none;
-  padding: 8px 8% 0 0;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  background-color: transparent;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  top: 20px;
+  right: 10%;
+  z-index: 5;
+  position: absolute;
+  cursor: pointer;
 }
 
-.closeIcon {
-  display: none;
-  /* color: #fff; */
+.nav-button2 .bar {
+  display: block;
+  width: 100%;
+  background: #6070ff;
+  height: 2px;
+  margin: 3px 0;
 }
 
-.menuIcon {
-  color: #6171ff;
+.nav-button2.active {
+  background: #6070ff;
+}
+
+.nav-button2.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-button2.active span:nth-child(1) {
+  transform: translateY(2px) rotate(45deg);
+  background: #000;
+}
+
+.nav-button2.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background: #000;
 }
 
 .mobilemain {
@@ -103,7 +115,7 @@ nav {
   height: 5410px;
   background: #fff;
   right: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -140,7 +152,7 @@ h1 {
   width: 327px;
   height: 150px;
   top: 206px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -154,7 +166,7 @@ h1 {
   color: #344563;
   width: 327px;
   height: 146px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -172,7 +184,7 @@ h1 {
   top: 526px;
   width: 120px;
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -246,7 +258,7 @@ a:active {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -262,7 +274,7 @@ h2 {
 .tonic .canopy {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -276,7 +288,7 @@ h2 {
 .tonic .back {
   width: 89px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -295,7 +307,7 @@ h2 {
 .tonic .year {
   width: 29px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -309,7 +321,7 @@ h2 {
 .paragraph2 {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -345,7 +357,7 @@ h2 {
   margin: 4px 0;
   cursor: pointer;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -438,7 +450,7 @@ h2 {
 .seeproject {
   height: 24px;
   width: 100px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -501,7 +513,7 @@ h2 {
   align-items: center;
   width: 327px;
   height: 101px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -512,7 +524,7 @@ h2 {
 .top #paragraph {
   width: 327px;
   height: 144px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -533,7 +545,7 @@ h2 {
   padding: 0;
   width: 120px;
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -571,7 +583,7 @@ h2 {
   text-align: center;
   width: 152px;
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -625,7 +637,7 @@ h2 {
 
 #languages {
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -687,7 +699,7 @@ h2 {
   align-items: center;
   left: 29%;
   top: 58.5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -721,7 +733,7 @@ h2 {
   align-items: center;
   left: 29%;
   top: 64.5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -755,7 +767,7 @@ h2 {
   align-items: center;
   left: 29%;
   top: 71%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -776,7 +788,7 @@ h2 {
   height: 24px;
   left: 24px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -821,7 +833,7 @@ h2 {
   position: absolute;
   height: 24px;
   left: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -862,7 +874,7 @@ h2 {
 
 .contact-me {
   height: 56px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -878,7 +890,7 @@ h2 {
 .info {
   width: 327px;
   height: 102px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -900,7 +912,7 @@ h2 {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 16px 30px 16px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -926,7 +938,7 @@ h2 {
   left: 24px;
   background: hsl(0, 0%, 100%);
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -983,17 +995,20 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     width: 30%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
   }
 
-  .nav-button2 {
+  .closeIcon {
     display: none;
   }
 
+  .nav-button2 {
+    display: none;
+  }
 
   .navigationList {
     display: flex;
@@ -1008,7 +1023,7 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     width: 30%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1023,7 +1038,8 @@ h2 {
     height: 846px;
     left: 0;
     top: 0;
-    background-image: url("./sources/Header\ bg.png"), url("./sources/header\ background\ shape-desktop.png");
+    background-image: url("./sources/Header\ bg.png"),
+      url("./sources/header\ background\ shape-desktop.png");
   }
 
   .headline #heading {
@@ -1482,7 +1498,8 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image: url("./sources/contact\ form\ background\ shapes.png"), url("./sources/contactmedesktop.png");
+    background-image: url("./sources/contact\ form\ background\ shapes.png"),
+      url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 750px;
     top: 85%;
