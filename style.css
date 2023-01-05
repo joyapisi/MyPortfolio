@@ -1,5 +1,7 @@
-html * {
+* {
   max-height: 1000000px;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -43,7 +45,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   list-style: none;
   padding-top: 4rem;
   mix-blend-mode: multiply;
@@ -63,6 +65,7 @@ nav {
 
 .ul-nav.active {
   display: flex;
+  position: fixed;
   transform: translateY(0);
   background-size: cover;
   background-color: #6060ff;
@@ -76,7 +79,7 @@ nav {
   width: 18px;
   height: 18px;
   background: #fff;
-  top: 20px;
+  top: 10px;
   right: 10%;
   z-index: 5;
   position: absolute;
@@ -93,6 +96,7 @@ nav {
 
 .nav-button2.active {
   background: #6070ff;
+  position: fixed;
 }
 
 .nav-button2.active span:nth-child(2) {
@@ -1005,7 +1009,7 @@ h2 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     align-items: center;
-    text-align: center;  
+    text-align: center;
   }
 
   .ul-nav.active {
