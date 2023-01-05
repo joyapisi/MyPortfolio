@@ -48,8 +48,7 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: 140vh;
-  /* background: #6070ff; */
+  height: 100vh;
   list-style: none;
   padding-top: 4rem;
   mix-blend-mode: multiply;
@@ -71,8 +70,9 @@ nav {
   display: flex;
   transform: translateY(0);
   background-size: cover;
-  background: #6060ff;
+  background-color: #6060ff;
   margin-top: 0;
+  height: 100vh;
 }
 
 .nav-button2 {
