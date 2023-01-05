@@ -39,7 +39,7 @@ nav {
 
 .ul-nav {
   flex-direction: column;
-  position:absolute;
+  position: absolute;
   gap: 6%;
   transform: translateY(-100%);
   transition: transform 0.3s;
@@ -118,7 +118,6 @@ nav {
   height: 5410px;
   background: #fff;
   right: 0;
-  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -1019,7 +1018,8 @@ h2 {
     height: 846px;
     left: 0;
     top: 0;
-    background-image: url("./sources/Header\ bg.png"),
+    background-image: 
+    url("./sources/Header\ bg.png"),
       url("./sources/header\ background\ shape-desktop.png");
   }
 
@@ -1068,7 +1068,6 @@ h2 {
     width: 1440px;
     height: 2800px;
     left: -3%;
-    /* right: 30%; */
   }
 
   .card1 {
@@ -1479,7 +1478,8 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image: url("./sources/contact\ form\ background\ shapes.png"),
+    background-image: 
+    url("./sources/contact\ form\ background\ shapes.png"),
       url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 750px;
