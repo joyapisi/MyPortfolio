@@ -11,10 +11,6 @@ nav {
   width: 100%;
 }
 
-/* nav ul li a {
-  display: none;
-} */
-
 .nav-button1 {
   align-items: center;
   padding: 10px 12px;
@@ -48,7 +44,6 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: 100vh;
   list-style: none;
   padding-top: 4rem;
   mix-blend-mode: multiply;
@@ -72,7 +67,8 @@ nav {
   background-size: cover;
   background-color: #6060ff;
   margin-top: 0;
-  height: 100vh;
+  height: 95vh;
+  width: 200vh;
 }
 
 .nav-button2 {
@@ -120,6 +116,7 @@ nav {
   height: 5410px;
   background: #fff;
   right: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -988,24 +985,33 @@ h2 {
 
   .ul-nav {
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     transition: none;
-    background: none;
+    margin-left: 62%;
+    margin-top: 3.2%;
     padding-top: 0;
     padding-right: 10%;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
     width: 30%;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
     color: #000;
   }
 
-  .closeIcon {
-    display: none;
+  .ul-nav .navigationList {
+    color: #344563;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .ul-nav.active {
+    width: 259px;
+    height: 40px;
+    background: transparent;
   }
 
   .nav-button2 {
