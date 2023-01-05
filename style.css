@@ -1018,9 +1018,10 @@ h2 {
     height: 846px;
     left: 0;
     top: 0;
-    background-image: url("./sources/Header\ bg.png"),
+    background-image: 
+    
+    url("./sources/Header\ bg.png"),
       url("./sources/header\ background\ shape-desktop.png");
-  
   }
 
   .headline #heading {
@@ -1478,10 +1479,10 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image: 
+    background-image:
+
     url("./sources/contact\ form\ background\ shapes.png"),
-      url("./sources/contactmedesktop.png");
-    
+      url("./sources/contactmedesktop.png");    
     width: 1440px;
     height: 750px;
     top: 85%;
@@ -1489,7 +1490,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+  }s
 
   .contactbody {
     display: flex;
