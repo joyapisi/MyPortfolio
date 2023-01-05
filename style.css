@@ -1021,7 +1021,7 @@ h2 {
     background-image:
     
       url("./sources/Header\ bg.png"),
-          url("./sources/header\ background\ shape-desktop.png");
+      url("./sources/header\ background\ shape-desktop.png");
   }
 
   .headline #heading {
@@ -1482,7 +1482,7 @@ h2 {
     background-image:
 
       url("./sources/contact\ form\ background\ shapes.png"),
-          url("./sources/contactmedesktop.png");
+      url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 750px;
     top: 85%;
