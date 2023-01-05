@@ -1020,8 +1020,9 @@ h2 {
     top: 0;
     background-image: 
     
-    url("./sources/Header\ bg.png"),
-      url("./sources/header\ background\ shape-desktop.png");
+      url("./sources/Header\ bg.png"),
+        url("./sources/header\ background\ shape-desktop.png");
+        
   }
 
   .headline #heading {
@@ -1481,8 +1482,9 @@ h2 {
   .contact-form {
     background-image:
 
-    url("./sources/contact\ form\ background\ shapes.png"),
-      url("./sources/contactmedesktop.png");    
+      url("./sources/contact\ form\ background\ shapes.png"),
+        url("./sources/contactmedesktop.png");
+
     width: 1440px;
     height: 750px;
     top: 85%;
@@ -1490,7 +1492,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }s
+  }
 
   .contactbody {
     display: flex;

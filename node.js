@@ -1,5 +1,5 @@
 const navButton2 = document.querySelector('.nav-button2');
-const navMenu = document.querySelector(''.ul-nav');
+const navMenu = document.querySelector('.ul-nav');
 
 navButton2.addEventListener('click', () => {
   navButton2.classList.toggle('active');
