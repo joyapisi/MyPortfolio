@@ -415,7 +415,7 @@ h2 {
   top: 215px;
 }
 
-.action .normalbutton {
+.normalbutton {
   width: 124px;
   height: 48px;
   color: #325fd2;
@@ -429,6 +429,7 @@ h2 {
   border: 1px solid #6a78fb;
   border-radius: 8px;
   margin-top: 3.5%;
+  cursor: pointer;
 }
 
 .popupbutton a:hover,
@@ -456,51 +457,54 @@ h2 {
   color: #fff;
 }
 
-.seeLiveButton a:hover,
-.seeLiveButton a:focus {
+.seeLiveButton:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
-.seeLiveButton a:visited {
+.seeLiveButton:visited {
   background: #eeeeef;
   border-radius: 8px;
   color: #396df2;
 }
 
-.seeLiveButton a:disabled {
+.seeLiveButton:disabled {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
 }
 
-.seeSourceButton a:hover,
-.seeSourceButton a:focus {
+.seeSourceButton:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
-.seeSourceButton a:visited {
+.seeSourceButton:visited {
   background: #d7d7d7;
   border-radius: 8px;
   color: #396df2;
 }
 
-.seeSourceButton a:disabled {
+.seeSourceButton:disabled {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
 }
 
-.action .normalbutton a:visited {
+.normalbutton:active {
   background: #2230d2;
   border-radius: 8px;
   color: rgb(237, 235, 235);
 }
 
-.action .normalbutton a:disabled {
+.normalbutton:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.normalbutton:disabled {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
 }
@@ -633,37 +637,6 @@ h2 {
   border: 1px solid #6070ff;
   border-radius: 8px;
   margin-top: 27%;
-}
-
-.normalbutton3 {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 152px;
-  height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #396df2;
-}
-
-.action .normalbutton2 a:visited {
-  background: #2230d2;
-  border-radius: 8px;
-}
-
-.action .normalbutton2 a:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-}
-
-.action .normalbutton2 a:disabled {
-  border: 1px solid #c1c7d0;
-  border-radius: 8px;
 }
 
 .skillslist {
@@ -1026,50 +999,61 @@ h2 {
 }
 
 /* mobile projects popup section */
-.popup {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 142px;
-  padding: 114px 24px;
-  position: absolute;
-  width: 375px;
-  height: 2788px;
-  left: -8%;
-  right: 30%;
-  top: 718px;
-  z-index: 10;
-  display: flex;
-}
-
-.popupCard1 {
+.model {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  gap: 4px;
-  width: 90%;
-  height: 713px;
+  gap: 10px;
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin: 10%;
-  background: #fff;
+  padding: 0 20px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
   z-index: 10;
-  border: 1px solid #dfe1e6;
-  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
+  width: 400px;
+  max-width: 70%;
+  height: 95%;
+}
+
+.model.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #413c3b;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.model-img {
+  width: 80%;
+  height: 200px;
 }
 
 .popupContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 0;
-  gap: 12px;
+  gap: 5px;
   width: 311px;
-  height: 40px;
+  height: 10px;
 }
 
 .h2popup {
@@ -1077,28 +1061,27 @@ h2 {
   font-style: normal;
   font-weight: 700;
   text-align: left;
-  margin-left: 10%;
 }
 
 .close {
-  color: rgb(0, 0, 0);
-  justify-content: flex-end;
-  margin-right: 10%;
-  width: 48px;
-  height: 48px;
+  cursor: pointer;
   border: none;
-  background: transparent;
+  outline: none;
+  background: none;
+  color: #67798e;
+  font-size: 30px;
+  /* margin-left: 250px; */
 }
 
 .popuptonic {
   display: flex;
   flex-direction: row;
   gap: 12px;
-  padding: 0%;
+  padding: 0;
   align-items: center;
 }
 
-.popuptonic .canopy {
+.popuptonic.canopy {
   width: 55px;
   height: 16px;
   font-family: "Poppins", sans-serif;
@@ -1107,14 +1090,11 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-.popuptonic .back {
-  width: 89px;
-  height: 16px;
+.popuptonic.back {
+  width: 90px;
+  height: 50px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1123,7 +1103,7 @@ h2 {
   color: #7a869a;
 }
 
-.popupdot {
+.popuptonic.dot {
   margin-top: 0;
   width: 8px;
   height: 8px;
@@ -1131,7 +1111,7 @@ h2 {
   border-radius: 50%;
 }
 
-.popuptonic .year {
+.popuptonic.year {
   width: 29px;
   height: 16px;
   font-family: "Poppins", sans-serif;
@@ -1140,23 +1120,20 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-#popupavator {
-  width: 100%;
+.model-body {
+  gap: 0px;
 }
 
 .popupparagraph2 {
-  width: 311px;
-  height: 220px;
+  width: 330px;
+  height: 160px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 15px;
   color: #344563;
 }
 
@@ -1169,11 +1146,10 @@ h2 {
   gap: 8px;
   width: 203px;
   height: 24px;
-  margin-top: 5%;
 }
 
 .popupbutton {
-  height: 24px;
+  height: 20px;
   background-color: hsl(240, 72%, 94%);
   border: none;
   color: #212658;
@@ -1186,75 +1162,54 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 16px;
   letter-spacing: 0.01em;
 }
 
-.popupbutton .htmlbutton {
-  width: 53px;
-}
-
-.popupbutton .cssbutton {
-  width: 45px;
-}
-
-.popupbutton .jsbutton {
-  width: 89px;
-}
-
 .popupaction {
-  display: grid;
-  grid-row: 1fr/1fr;
-  width: 311px;
-  height: 56px;
+  margin-top: 5px;
+  display: flex;
+  gap: 12px;
 }
 
 .seeLiveButton {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   gap: 10px;
-  position: absolute;
-  width: 132px;
-  height: 48px;
+  width: 110px;
+  height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #396df2;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: transparent;
-  order: 1;
-  left: 12.5%;
-  margin-top: 2.5%;
-}
-
-.popupseeproject {
-  width: 62px;
-  height: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #396df2;
 }
 
 .seeSourceButton {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* padding: 8px 6px; */
   gap: 6px;
-  position: absolute;
-  width: 130px;
-  height: 48px;
+  width: 120px;
+  height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #396df2;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: transparent;
-  left: 55%;
-  margin-top: 2.5%;
 }
 
 @media screen and (min-device-width: 768px) {
@@ -1327,8 +1282,7 @@ h2 {
     height: 846px;
     left: 0;
     top: 0;
-    background-image:
-      url("./sources/Header\ bg.png"),
+    background-image: url("./sources/Header\ bg.png"),
       url("./sources/header\ background\ shape-desktop.png");
   }
 
@@ -1476,16 +1430,21 @@ h2 {
     height: 24px;
   }
 
-  .action {
-    width: 496px;
-    height: 153px;
-  }
-
   .normalbutton {
     width: 124px;
     height: 48px;
+    color: #325fd2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 12px;
     gap: 10px;
+    position: absolute;
+    border: 1px solid #6a78fb;
+    border-radius: 8px;
+    margin-top: 3.5%;
+    cursor: pointer;
   }
 
   .seeproject {
@@ -1573,11 +1532,6 @@ h2 {
 
   .action-last:hover,
   .action-last:active {
-    animation: color-me-in 1.5s;
-  }
-
-  .normalbutton3:hover,
-  .normalbutton3:active {
     animation: color-me-in 1.5s;
   }
 
@@ -1787,9 +1741,7 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image:
-
-      url("./sources/contact\ form\ background\ shapes.png"),
+    background-image: url("./sources/contact\ form\ background\ shapes.png"),
       url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 750px;
@@ -1857,44 +1809,50 @@ h2 {
     left: 45%;
   }
 
-  /* desktop projects popup section */
-  .popup {
+  .model {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 142px;
-    gap: 142px;
-    position: absolute;
-    width: 95%;
-    height: 2694px;
-    top: 2317px;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 0 20px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
     z-index: 10;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 1156px;
+    max-width: 70%;
   }
 
-  .popupCard1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 8px;
-    width: 90%;
-    height: 1163px;
-    margin: 10%;
-    background: #fff;
-    border: 1px solid #dfe1e6;
-    box-sizing: border-box;
-    border-radius: 16px;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  .model.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #413c3b;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
   }
 
   .popupContainer {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 12px;
-    width: 1108px;
-    height: 40px;
+    justify-content: space-between;
   }
 
   .h2popup {
@@ -1902,76 +1860,75 @@ h2 {
     font-style: normal;
     font-weight: 700;
     text-align: left;
-    margin-left: 2%;
-    width: 1056px;
+    margin-left: 0;
+    width: 156px;
     height: 40px;
   }
 
   .close {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
+    cursor: pointer;
     border: none;
-    margin-right: 2%;
+    outline: none;
+    background: none;
+    color: #67798e;
+    font-size: 30px;
+    margin-left: 780px;
   }
 
-  .popuptonic {
+  .model .popuptonic {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
+    gap: 8px;
+    margin-top: 15px;
     padding: 0;
     align-items: center;
-    width: 260px;
-    height: 36px;
+    /* width: 260px;
+    height: 36px; */
   }
 
-  .popuptonic .canopy {
+  .popuptonic.canopy {
     width: 63px;
     height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
     color: #344563;
   }
 
-  .popuptonic .back {
+  .popuptonic.back {
     width: 101px;
     height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
     color: #7a869a;
   }
 
-  .popupdot {
-    margin-top: 0;
+  .popuptonic.dot {
+    margin-top: 5;
     width: 8px;
     height: 8px;
     background: #c1c7d0;
     border-radius: 50%;
   }
 
-  .popuptonic .year {
+  .popuptonic.year {
     width: 32px;
     height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
     color: #7a869a;
   }
 
-  #popupavator {
+  .model-img {
     width: 100%;
-    height: auto;
+    height: 350px;
   }
 
   .bottomcontent {
@@ -1980,15 +1937,14 @@ h2 {
   }
 
   .popupparagraph2 {
-    width: 778px;
-    height: 382px;
+    width: 720px;
+    height: 180px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
     color: #344563;
-    order: 1;
   }
 
   .techstackbuttons {
@@ -1996,11 +1952,9 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 12px;
+    gap: 1px;
     width: 306px;
-    height: 157px;
-    top: 781px;
-    order: 2;
+    height: 57px;
   }
 
   .popupresources {
@@ -2012,6 +1966,7 @@ h2 {
     gap: 8px;
     width: 203px;
     height: 24px;
+    margin-top: 10px;
   }
 
   .popupbutton {
@@ -2031,18 +1986,6 @@ h2 {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.01em;
-  }
-
-  .popupbutton .htmlbutton {
-    width: 53px;
-  }
-
-  .popupbutton .cssbutton {
-    width: 45px;
-  }
-
-  .popupbutton .jsbutton {
-    width: 89px;
   }
 
   .popupbutton a:hover,
@@ -2070,23 +2013,31 @@ h2 {
   }
 
   .popupaction {
-    display: grid;
-    grid-row: 1/1;
-    width: 306px;
-    height: 56px;
+    margin-top: 40px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .model-body {
+    gap: 20px;
+  }
+
+  .model-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .model-content > div {
+    display: flex;
+    flex-direction: column;
   }
 
   .seeLiveButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 25px;
-    gap: 10px;
-    position: absolute;
-    width: 142px;
+    padding: 8px;
+    gap: 25px;
+    width: 120px;
     height: 40px;
-    left: 5px;
-    bottom: 16px;
     border: 1px solid hsl(234, 100%, 69%);
     border-radius: 8px;
     background: transparent;
@@ -2098,6 +2049,18 @@ h2 {
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     border-radius: 8px;
     color: #fff;
+  }
+
+  .seeSourceButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background: transparent;
   }
 
   .seeSourceButton a:hover,
@@ -2133,7 +2096,7 @@ h2 {
   .popupseeproject {
     width: 65px;
     height: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -2142,21 +2105,5 @@ h2 {
     align-items: center;
     text-align: center;
     color: #396df2;
-  }
-
-  .seeSourceButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    position: absolute;
-    width: 142px;
-    height: 40px;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    background: transparent;
-    left: 159px;
-    bottom: 16px;
   }
 }
