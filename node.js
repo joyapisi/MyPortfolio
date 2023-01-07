@@ -12,9 +12,7 @@ document.querySelectorAll('ul.ul-nav > li').forEach((n) => n.addEventListener('c
 }));
 
 // form validation
-const email = document.querySelector('#E_mail');
-const error = document.querySelector('#Feed_back');
-const form = document.querySelector('#Form');
+
 const emailValidation = (input) => {
   if (input === input.toLowerCase()) {
     return true;
@@ -60,22 +58,22 @@ openModelButtons.forEach(button => {
   button.addEventListener('click', () => {
     const model = document.querySelector(button.dataset.modelTarget);
     openModel(model);
-  });
-});
+  })
+})
 
 overlay.addEventListener('click', () => {
-  const models = document.querySelectorAll('.model.active');
+  const models = document.querySelectorAll('.model.active')
   models.forEach(model => {
     closeModel(model);
-  });
-});
+  })
+})
 
 closeModelButtons.forEach(button => {
   button.addEventListener('click', () => {
     const model = button.closest('.model');
     closeModel(model);
-  });
-});
+  })
+})
 
 function openModel(model) {
   if (model == null) return;
