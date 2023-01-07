@@ -11,7 +11,7 @@ document.querySelectorAll('ul.ul-nav > li').forEach((n) => n.addEventListener('c
   navMenu.classList.remove('active');
 }));
 
-const email = document.querySelector('#E_mail');
+const email = document.querySelector('#Email');
 const error = document.querySelector('#Feed_back');
 const form = document.querySelector('#Form');
 const emailValidation = (input) => {
