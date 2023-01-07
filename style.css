@@ -875,7 +875,7 @@ h2 {
   background-repeat: no-repeat;
   left: 0;
   top: 5310px;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border-top-left-radius: 5rem;
 }
 
@@ -1011,7 +1011,6 @@ h2 {
 .popupContainer {
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   align-items: center;
   padding: 0;
@@ -1165,13 +1164,6 @@ h2 {
 .popupbutton a:disabled {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
-}
-
-.popupbutton:focus,
-.popupbutton:hover {
-  background-color: #fff;
-  font-size: 16px;
-  color: #333;
 }
 
 .popupaction {
