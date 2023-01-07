@@ -11,9 +11,6 @@ document.querySelectorAll('ul.ul-nav > li').forEach((n) => n.addEventListener('c
   navMenu.classList.remove('active');
 }));
 
-
-// ---------------------form validation-------------------------
-
 const email = document.querySelector('#E_mail');
 const error = document.querySelector('#Feed_back');
 const form = document.querySelector('#Form');
