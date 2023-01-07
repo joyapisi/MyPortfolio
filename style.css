@@ -2112,11 +2112,6 @@ h2 {
     color: #396df2;
   }
 
-  .popupaction .seeSourceButton a:disabled {
-    border: 1px solid #c1c7d0;
-    border-radius: 8px;
-  }
-
   .popupaction .seeLiveButton a:visited {
     background: #eeeeef;
     border-radius: 8px;
@@ -2124,6 +2119,11 @@ h2 {
   }
 
   .popupaction .seeLiveButton a:disabled {
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+  }
+
+  .popupaction .seeSourceButton a:disabled {
     border: 1px solid #c1c7d0;
     border-radius: 8px;
   }
