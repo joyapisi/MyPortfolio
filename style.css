@@ -1893,7 +1893,6 @@ h2 {
     gap: 12px;
     width: 1108px;
     height: 40px;
-   
   }
 
   .h2popup {
@@ -1906,7 +1905,6 @@ h2 {
     height: 40px;
   }
 
-
   .close {
     display: flex;
     flex-direction: row;
@@ -1917,7 +1915,6 @@ h2 {
     border: none;
     margin-right: 2%; 
   }
-
 
   .popuptonic {
     display: flex;
@@ -1930,7 +1927,6 @@ h2 {
   }
 
   .popuptonic .canopy {
-
     width: 63px;
     height: 20px;
     font-family: "Poppins", sans-serif;
@@ -2102,6 +2098,25 @@ h2 {
     color: #fff;
   }
 
+  .seeSourceButton a:hover,
+  .seeSourceButton a:focus {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  .seeSourceButton a:visited {
+    background: #d7d7d7;
+    border-radius: 8px;
+    color: #396df2;
+  }
+
+  .popupaction .seeSourceButton a:disabled {
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+  }
+
   .popupaction .seeLiveButton a:visited {
     background: #eeeeef;
     border-radius: 8px;
@@ -2141,25 +2156,5 @@ h2 {
     background: transparent;
     left: 159px;
     bottom: 16px;
-  }
-
-  .seeSourceButton a:hover,
-  .seeSourceButton a:focus {
-    background: #6070ff;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-    border-radius: 8px;
-    color: #fff;
-  }
-
-  .seeSourceButton a:visited {
-    background: #d7d7d7;
-    border-radius: 8px;
-    color: #396df2;
-  }
-
-  .popupaction .seeSourceButton a:disabled {
-    border: 1px solid #c1c7d0;
-    border-radius: 8px;
-
   }
 }
