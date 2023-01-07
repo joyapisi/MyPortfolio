@@ -1012,7 +1012,7 @@ h2 {
   z-index: 10;
   background: #fff;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
   width: 400px;
   max-width: 70%;
@@ -1070,7 +1070,6 @@ h2 {
   background: none;
   color: #67798e;
   font-size: 30px;
-  /* margin-left: 250px; */
 }
 
 .popuptonic {
@@ -1123,7 +1122,7 @@ h2 {
 }
 
 .model-body {
-  gap: 0px;
+  gap: 0;
 }
 
 .popupparagraph2 {
@@ -1282,7 +1281,8 @@ h2 {
     height: 846px;
     left: 0;
     top: 0;
-    background-image: url("./sources/Header\ bg.png"),
+    background-image:
+    url("./sources/Header\ bg.png"),
       url("./sources/header\ background\ shape-desktop.png");
   }
 
@@ -1741,7 +1741,8 @@ h2 {
 
   /* Last Page */
   .contact-form {
-    background-image: url("./sources/contact\ form\ background\ shapes.png"),
+    background-image:
+    url("./sources/contact\ form\ background\ shapes.png"),
       url("./sources/contactmedesktop.png");
     width: 1440px;
     height: 750px;
@@ -1822,7 +1823,7 @@ h2 {
     z-index: 10;
     background: #fff;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
     width: 1156px;
     max-width: 70%;
@@ -1881,8 +1882,6 @@ h2 {
     margin-top: 15px;
     padding: 0;
     align-items: center;
-    /* width: 260px;
-    height: 36px; */
   }
 
   .popuptonic.canopy {
