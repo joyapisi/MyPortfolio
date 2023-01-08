@@ -56,6 +56,9 @@ if (informationStored) {
 const openModelButtons = document.querySelectorAll('[data-model-target]');
 const closeModelButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+closeModel();
+openModel();
+button();
 
 openModelButtons.forEach(button, () => {
   button.addEventListener('click', () => {
