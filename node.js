@@ -68,7 +68,7 @@ openModelButtons.forEach(button, () => {
 
 overlay.addEventListener('click', () => {
   const models = document.querySelectorAll('.model.active');
-  models.forEach(model (=>) {
+  models.forEach(model, () => {
     closeModel(model);
   });
 });
