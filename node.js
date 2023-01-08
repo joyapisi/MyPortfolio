@@ -59,7 +59,7 @@ const overlay = document.getElementById('overlay');
 let closeModel;
 let openModel;
 
-openModelButtons.forEach(button (=>) {
+openModelButtons.forEach(button => () {
   button.addEventListener('click', () => {
     const model = document.querySelector(button.dataset.modelTarget);
     openModel(model);
@@ -73,7 +73,7 @@ overlay.addEventListener('click', () => {
   });
 });
 
-closeModelButtons.forEach(button (=>) {
+closeModelButtons.forEach(button =>() {
   button.addEventListener('click', () => {
     const model = button.closest('.model');
     closeModel(model);
