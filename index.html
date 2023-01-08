@@ -79,11 +79,8 @@
           <li><a  class="button" href="#">javaScript</a></li>      
         </ul>
  
-          <div class="action" title="button to see project "> 
-            <form class="normalbutton">
-              <a class="seeproject"  href="#">See Project</a> 
-            </form> 
-          </div> 
+          
+        <button data-model-target="#model" class="normalbutton">See Project</button>
       
       </div>
     </div>
@@ -99,8 +96,8 @@
         <li><a class="tonic canopy" href="#">CANOPY</a></li>
         <li class="tonic dot"></li>
         <li class="tonic back">Back End Dev</li>
-         <li class="tonic dot"></li>
-         <li class="tonic year">2015</li>
+        <li class="tonic dot"></li>
+        <li class="tonic year">2015</li>
        </ul>
 
        <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
@@ -111,11 +108,7 @@
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action" title="button-to-see-project"> 
-          <form class="normalbutton">
-            <a class="seeproject"  href="#">See Project</a> 
-          </form> 
-        </div> 
+      <button data-model-target="#model1" class="normalbutton">See Project</button>
       
       </div>
     </div>
@@ -143,11 +136,7 @@
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action" title="button-to-see-project"> 
-          <form class="normalbutton">
-            <a class="seeproject"  href="#">See Project</a> 
-          </form> 
-      </div>
+      <button data-model-target="#model2" class="normalbutton">See Project</button>
       
       </div>
     </div>
@@ -175,11 +164,7 @@
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
 
-        <div class="action" title="button-to-see-project"> 
-          <form class="normalbutton">
-            <a class="seeproject"  href="#">See Project</a> 
-          </form> 
-      </div> 
+      <button data-model-target="#model3" class="normalbutton">See Project</button> 
        
       </div>
     </div>
@@ -273,11 +258,12 @@
   <p class="info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
   
   <fieldset class="fieldset" title="enter-your-contacts-form">
-    <form class= "form" action="https://formspree.io/f/xbjbneev" method="post">
+    <form id="Form" class= "form" action="https://formspree.io/f/xbjbneev" method="post">
       <ul>
-        <li><input class="input-group" type="text" maxlength="30" name="name" placeholder="Your Name*" required></li>
-        <li><input class="input-group" type="email" name="email" placeholder="Your Email*" required></li>
-        <li><textarea class="input-group text-area" name="user_message" maxlength="500" placeholder="Write your message here*" required></textarea></li>
+        <li><input class="inputs input-group" type="text" maxlength="30" name="name" placeholder="Your Name*" required></li>
+        <li><input id="E_mail" class=" inputs input-group" type="email" name="email" placeholder="Your Email*" required></li>
+        <span id="Feed_back" ></span>
+        <li><textarea class="inputs input-group text-area" name="user_message" maxlength="500" placeholder="Write your message here*" required></textarea></li>
         <button class="form-button" type="submit">Get in Touch</button>
       </ul>
     </form>
@@ -285,7 +271,240 @@
 </div>
 </section>
 
+<div class="model" id="model">
+  <div class="popupContainer">
+    <h2 class="h2popup">
+      Tonic
+    </h2>
+    <button data-close-button class="close">&times;</button>
+  </div>
+  <ul class="popuptonic">
+    <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic back">Back End Dev</li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic year">2015</li>
+  </ul>
+  
+  <div class="model-body">
+    <img src="./sources/Snapshoot-Portfolio.png" alt="picture" class="model-img">
+    <!-- <img class="popupavator" src="sources/Snapshoot-Portfolio.png" alt="Avatar"> -->
+    <div class="model-content">
+      <p class="popupparagraph2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the releax map lapora verita.
+      </p>
+      <div>
+        <div class="techstackbuttons">
+          <ul class="popupresources" title="popup-resources">
+            <li><a  class="popupbutton" href="#">HTML</a><li>
+            <li><a  class="popupbutton" href="#">CSS</a></li>
+            <li><a  class="popupbutton" href="#">javaScript</a></li>           
+          </ul>
+          <ul class="popupresources">
+            <li><a  class="popupbutton" href="#">Github</a><li>
+            <li><a  class="popupbutton" href="#">Ruby</a></li>
+            <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
+          </ul>
+        </div>
+        <div class="popupaction">
+          <button class="seeLiveButton">
+            See Live
+            <img src="./sources/PopUpLiveIcon" alt="see image live" />
+          </button>
+          <button class="seeSourceButton">
+            See Source
+            <img src="./sources/PopUp GitHub Icon" alt="github source" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="model" id="model1">
+  <div class="popupContainer">
+    <h2 class="h2popup">
+      Tonic
+    </h2>
+    <button data-close-button class="close">&times;</button>
+  </div>
+  <ul class="popuptonic">
+    <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic back">Back End Dev</li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic year">2015</li>
+  </ul>
+  
+  <div class="model-body">
+    <img src="./sources/Portfolio2.png" alt="picture" class="model-img">
+    <!-- <img class="popupavator" src="sources/Snapshoot-Portfolio.png" alt="Avatar"> -->
+    <div class="model-content">
+      <p class="popupparagraph2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the releax map lapora verita.
+      </p>
+      <div>
+        <div class="techstackbuttons">
+          <ul class="popupresources" title="popup-resources">
+            <li><a  class="popupbutton" href="#">HTML</a><li>
+            <li><a  class="popupbutton" href="#">CSS</a></li>
+            <li><a  class="popupbutton" href="#">javaScript</a></li>           
+          </ul>
+          <ul class="popupresources">
+            <li><a  class="popupbutton" href="#">Github</a><li>
+            <li><a  class="popupbutton" href="#">Ruby</a></li>
+            <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
+          </ul>
+        </div>
+        <div class="popupaction">
+          <button class="seeLiveButton">
+            See Live
+            <img src="./sources/PopUpLiveIcon" alt="see image live" />
+          </button>
+          <button class="seeSourceButton">
+            See Source
+            <img src="./sources/PopUp GitHub Icon" alt="github source" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="model" id="model2">
+  <div class="popupContainer">
+    <h2 class="h2popup">
+      Tonic
+    </h2>
+    <button data-close-button class="close">&times;</button>
+  </div>
+  <ul class="popuptonic">
+    <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic back">Back End Dev</li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic year">2015</li>
+  </ul>
+  
+  <div class="model-body">
+    <img src="./sources/Portfolio3.png" alt="picture" class="model-img">
+    <!-- <img class="popupavator" src="sources/Snapshoot-Portfolio.png" alt="Avatar"> -->
+    <div class="model-content">
+      <p class="popupparagraph2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the releax map lapora verita.
+      </p>
+      <div>
+        <div class="techstackbuttons">
+          <ul class="popupresources" title="popup-resources">
+            <li><a  class="popupbutton" href="#">HTML</a><li>
+            <li><a  class="popupbutton" href="#">CSS</a></li>
+            <li><a  class="popupbutton" href="#">javaScript</a></li>           
+          </ul>
+          <ul class="popupresources">
+            <li><a  class="popupbutton" href="#">Github</a><li>
+            <li><a  class="popupbutton" href="#">Ruby</a></li>
+            <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
+          </ul>
+        </div>
+        <div class="popupaction">
+          <button class="seeLiveButton">
+            See Live
+            <img src="./sources/PopUpLiveIcon" alt="see image live" />
+          </button>
+          <button class="seeSourceButton">
+            See Source
+            <img src="./sources/PopUp GitHub Icon" alt="github source" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="model" id="model3">
+  <div class="popupContainer">
+    <h2 class="h2popup">
+      Tonic
+    </h2>
+    <button data-close-button class="close">&times;</button>
+  </div>
+  <ul class="popuptonic">
+    <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic back">Back End Dev</li>
+    <li class="popuptonic dot"></li>
+    <li class="popuptonic year">2015</li>
+  </ul>
+  
+  <div class="model-body">
+    <img src="./sources/Portfolio4.png" alt="picture" class="model-img">
+    <!-- <img class="popupavator" src="sources/Snapshoot-Portfolio.png" alt="Avatar"> -->
+    <div class="model-content">
+      <p class="popupparagraph2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the releax map lapora verita.
+      </p>
+      <div>
+        <div class="techstackbuttons">
+          <ul class="popupresources" title="popup-resources">
+            <li><a  class="popupbutton" href="#">HTML</a><li>
+            <li><a  class="popupbutton" href="#">CSS</a></li>
+            <li><a  class="popupbutton" href="#">javaScript</a></li>           
+          </ul>
+          <ul class="popupresources">
+            <li><a  class="popupbutton" href="#">Github</a><li>
+            <li><a  class="popupbutton" href="#">Ruby</a></li>
+            <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
+          </ul>
+        </div>
+        <div class="popupaction">
+          <button class="seeLiveButton">
+            See Live
+            <img src="./sources/PopUpLiveIcon" alt="see image live" />
+          </button>
+          <button class="seeSourceButton">
+            See Source
+            <img src="./sources/PopUp GitHub Icon" alt="github source" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="overlay"></div>
+
+<!-- desktop popup -->
+
+
 <script src="node.js"></script>
 
-    </body>
+  </body>
 </html>
