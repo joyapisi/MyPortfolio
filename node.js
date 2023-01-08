@@ -31,6 +31,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+// Data Preservation, locally
 const localData = document.querySelectorAll('.inputs');
 const localStoreData = {
   name: '',
@@ -56,7 +57,7 @@ const openModelButtons = document.querySelectorAll('[data-model-target]');
 const closeModelButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 let closeModel;
-let closeModel;
+let openModel;
 
 openModelButtons.forEach(button (=>) {
   button.addEventListener('click', () => {
